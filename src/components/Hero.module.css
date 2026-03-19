@@ -1,0 +1,240 @@
+.hero {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  border-bottom: 1px solid var(--rule);
+  min-height: 340px;
+}
+
+.photoCol {
+  border-right: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 20px;
+  background: rgba(255, 255, 255, 0.3);
+  gap: 14px;
+}
+
+.photoFrame {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--maroon);
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photoFrame:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 0 4px var(--maroon-pale);
+}
+
+.photoFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.photoName {
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  font-family: var(--sans);
+}
+
+.photoName span {
+  color: var(--maroon);
+  display: block;
+}
+
+.photoLoc {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink2);
+  letter-spacing: 0.08em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.locDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--maroon);
+  flex-shrink: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(1.4); }
+}
+
+.certStack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 4px;
+}
+
+.certMini {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--maroon);
+  background: var(--maroon-pale);
+  border: 0.5px solid var(--maroon-light);
+  padding: 5px 8px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  line-height: 1.4;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.certMini:hover {
+  background: var(--maroon);
+  color: #f8eced;
+  transform: translateX(2px);
+}
+
+.content {
+  padding: 36px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.pretitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.pretitleLine {
+  width: 24px;
+  height: 2px;
+  background: var(--maroon);
+  flex-shrink: 0;
+}
+
+.pretitleText {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--maroon);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  margin-bottom: 8px;
+  font-family: var(--sans);
+}
+
+.title em {
+  font-style: normal;
+  color: var(--maroon);
+}
+
+.discipline {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink2);
+  letter-spacing: 0.06em;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.bio {
+  font-size: 13.5px;
+  color: var(--ink2);
+  line-height: 1.78;
+  max-width: 500px;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 11px;
+  border: 0.5px solid var(--rule);
+  background: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s;
+  overflow: hidden;
+}
+
+.contactItem:hover {
+  border-color: var(--maroon);
+  background: var(--maroon-pale);
+}
+
+.contactIcon {
+  width: 26px;
+  height: 26px;
+  background: var(--maroon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #f8eced;
+  transition: background 0.2s;
+}
+
+.contactItem:hover .contactIcon {
+  background: var(--maroon-deep);
+}
+
+.contactIcon svg {
+  width: 12px;
+  height: 12px;
+}
+
+.contactDetail {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactLabel {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--ink2);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contactValue {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .hero { grid-template-columns: 1fr; }
+  .photoCol { border-right: none; border-bottom: 1px solid var(--rule); padding: 28px 20px; }
+  .content { padding: 24px 20px; }
+  .title { font-size: 28px; }
+  .contactGrid { grid-template-columns: 1fr; }
+}
