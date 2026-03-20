@@ -11,13 +11,32 @@ const experience = [
     date: 'Sep 2024 – Mar 2026',
     org: 'Streamlan Solutions Ltd\nNairobi',
     role: 'Solar & Electrical Technician',
-    desc: 'Installed residential and commercial solar PV systems. Mounted panels, routed DC/AC cabling, and supported inverter setup. Ensured compliance with electrical standards and safety procedures.',
+    desc: [
+      'Conducted site assessments and performed solar PV system sizing',
+      'Installed and commissioned residential and commercial solar PV systems',
+      'Mounted panels and performed DC string wiring and AC distribution integration',
+      'Configured inverters and routed DC/AC cabling across installations',
+      'Installed protection devices including MCBs, RCCBs, isolators, and surge protection devices',
+      'Integrated solar systems with building electrical distribution boards',
+      'Performed electrical wiring, grounding, and load connections for residential and commercial installations',
+      'Performed system testing, commissioning, and troubleshooting using electrical test equipment',
+      'Ensured installations complied with electrical standards and safety procedures'
+    ],
   },
   {
     date: 'Jan 2023 – Aug 2024',
     org: 'Bhachu Industries Ltd\nNairobi',
     role: 'Mechanical Design Engineer',
-    desc: 'Created over 50 SolidWorks drawings for trailers and gas cylinders. Designed components that passed quality assurance checks. Collaborated across teams to meet engineering specifications.',
+    desc: [
+      'Developed over 70 detailed CAD models and engineering drawings',
+      'Designed trailers, pressure vessels, and structural components for industrial use',
+      'Prepared manufacturing drawings with dimensions, tolerances, and bill of materials',
+      'Performed basic structural analysis to ensure mechanical integrity of components',
+      'Collaborated with fabrication teams to translate designs into manufacturable products',
+      'Resolved manufacturing constraints through iterative design improvements',
+      'Supported quality assurance by verifying fabricated components against design specifications',
+      'Maintained engineering documentation and design revisions for production'
+    ],
   },
 ]
 

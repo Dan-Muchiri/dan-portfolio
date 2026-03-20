@@ -5,7 +5,7 @@ import danPhoto from '../assets/dan.jpg'
 const certs = [
   'EBK Graduate Engineer',
   'Solar PV T3 · EPRA',
-  'Siemens Mechatronics · DEKUT',
+  'Siemens Mechatronics Certification · DEKUT',
   'DELF B1 French · Alliance Française',
 ]
 
@@ -34,7 +34,7 @@ const contacts = [
   {
     label: 'LinkedIn',
     value: 'Dan Muchiri',
-    href: 'https://linkedin.com/in/danmuchiri',
+    href: 'https://linkedin.com/in/dan-muchiri',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
         <rect x="2" y="2" width="20" height="20" rx="3"/>
@@ -45,7 +45,7 @@ const contacts = [
   {
     label: 'GitHub',
     value: 'Dan Muchiri',
-    href: 'https://github.com/danmuchiri',
+    href: 'https://github.com/Dan-Muchiri',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
@@ -76,6 +76,7 @@ export default function Hero() {
         <p className={styles.photoName}>
           Dan <span>Muchiri</span>
         </p>
+        <span className={styles.pretitText}>Mechatronic Engineer</span>
         <p className={styles.photoLoc}>
           <span className={styles.locDot} />
           Nairobi, Kenya

@@ -4,23 +4,23 @@
 }
 
 .header {
-  padding: 28px 36px 22px;
+  padding: 40px var(--h-pad) 32px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
 }
 
 .num {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   color: rgba(248, 236, 237, 0.45);
   letter-spacing: 0.12em;
   flex-shrink: 0;
 }
 
 .title {
-  font-size: 17px;
+  font-size: clamp(18px, 2vw, 24px);
   font-weight: 700;
   color: #f8eced;
   letter-spacing: -0.01em;
@@ -41,7 +41,7 @@
 }
 
 .card {
-  padding: 28px 28px;
+  padding: clamp(28px, 3.5vw, 48px);
   background: var(--maroon-deep);
   transition: background 0.25s ease;
   cursor: default;
@@ -52,13 +52,13 @@
 }
 
 .icon {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   color: #f8eced;
   transition: border-color 0.25s, background 0.25s;
 }
@@ -69,15 +69,15 @@
 }
 
 .icon svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 }
 
 .name {
-  font-size: 13px;
+  font-size: clamp(14px, 1.4vw, 18px);
   font-weight: 700;
   color: #f8eced;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-family: var(--sans);
 }
 
@@ -85,12 +85,12 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 5px;
 }
 
 .skills li {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: clamp(10px, 1vw, 12px);
   color: rgba(248, 236, 237, 0.55);
   line-height: 1.7;
   letter-spacing: 0.04em;
@@ -98,12 +98,11 @@
 }
 
 .card:hover .skills li {
-  color: rgba(248, 236, 237, 0.75);
+  color: rgba(248, 236, 237, 0.8);
 }
 
 @media (max-width: 768px) {
   .grid { grid-template-columns: 1fr; }
-  .header { padding: 22px 20px 18px; }
-  .card { padding: 22px 20px; }
-  .title { font-size: 14px; }
+  .header { padding: 28px 24px 22px; }
+  .card { padding: 28px 24px; }
 }

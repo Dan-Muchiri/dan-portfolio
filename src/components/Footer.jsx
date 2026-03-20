@@ -8,8 +8,8 @@ export default function Footer() {
       <div className={styles.links}>
         <a href="tel:+254706318757">+254 706 318 757</a>
         <a href="mailto:danspmunene@gmail.com">danspmunene@gmail.com</a>
-        <a href="https://linkedin.com/in/danmuchiri" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/danmuchiri" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/dan-muchiri" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/Dan-Muchiri" target="_blank" rel="noreferrer">GitHub</a>
       </div>
       <span className={styles.copy}>Nairobi, Kenya</span>
     </footer>

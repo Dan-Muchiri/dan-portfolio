@@ -1,8 +1,8 @@
 .hero {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 260px 1fr;
+  min-height: calc(100vh - 65px);
   border-bottom: 1px solid var(--rule);
-  min-height: 340px;
 }
 
 .photoCol {
@@ -10,14 +10,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px 20px;
+  padding: 48px 28px;
   background: rgba(255, 255, 255, 0.3);
-  gap: 14px;
+  gap: 18px;
 }
 
 .photoFrame {
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--maroon);
@@ -27,7 +27,7 @@
 
 .photoFrame:hover {
   transform: scale(1.04);
-  box-shadow: 0 0 0 4px var(--maroon-pale);
+  box-shadow: 0 0 0 5px var(--maroon-pale);
 }
 
 .photoFrame img {
@@ -39,12 +39,21 @@
 }
 
 .photoName {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 800;
   text-align: center;
   letter-spacing: -0.01em;
   line-height: 1.25;
   font-family: var(--sans);
+}
+
+.pretitText {
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 16px;
+  color: var(--maroon);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .photoName span {
@@ -54,17 +63,17 @@
 
 .photoLoc {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 11px;
   color: var(--ink2);
   letter-spacing: 0.08em;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
 }
 
 .locDot {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: var(--maroon);
   flex-shrink: 0;
@@ -73,72 +82,72 @@
 
 @keyframes pulse {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.6; transform: scale(1.4); }
+  50%       { opacity: 0.6; transform: scale(1.5); }
 }
 
 .certStack {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  margin-top: 4px;
+  gap: 7px;
+  margin-top: 6px;
 }
 
 .certMini {
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: 10px;
   color: var(--maroon);
   background: var(--maroon-pale);
   border: 0.5px solid var(--maroon-light);
-  padding: 5px 8px;
+  padding: 7px 10px;
   letter-spacing: 0.04em;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.5;
   transition: background 0.2s, transform 0.2s;
 }
 
 .certMini:hover {
   background: var(--maroon);
   color: #f8eced;
-  transform: translateX(2px);
+  transform: translateX(3px);
 }
 
 .content {
-  padding: 36px 40px;
+  padding: clamp(40px, 5vw, 72px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 24px;
+  justify-content: center;
+  gap: 28px;
 }
 
 .pretitle {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
 .pretitleLine {
-  width: 24px;
-  height: 2px;
+  width: 28px;
+  height: 2.5px;
   background: var(--maroon);
   flex-shrink: 0;
 }
 
 .pretitleText {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 16px;
   color: var(--maroon);
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .title {
-  font-size: 38px;
+  font-size: clamp(36px, 4.5vw, 58px);
   font-weight: 800;
   line-height: 1.05;
-  letter-spacing: -0.025em;
-  margin-bottom: 8px;
+  letter-spacing: -0.03em;
+  margin-bottom: 10px;
   font-family: var(--sans);
 }
 
@@ -149,32 +158,32 @@
 
 .discipline {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   color: var(--ink2);
-  letter-spacing: 0.06em;
-  margin-bottom: 16px;
-  padding-bottom: 16px;
+  letter-spacing: 0.07em;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid var(--rule);
 }
 
 .bio {
-  font-size: 13.5px;
+  font-size: clamp(15px, 1.5vw, 17px);
   color: var(--ink2);
   line-height: 1.78;
-  max-width: 500px;
+  max-width: 560px;
 }
 
 .contactGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6px;
+  gap: 8px;
 }
 
 .contactItem {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 9px 11px;
+  gap: 10px;
+  padding: 12px 14px;
   border: 0.5px solid var(--rule);
   background: rgba(255, 255, 255, 0.5);
   text-decoration: none;
@@ -188,8 +197,8 @@
 }
 
 .contactIcon {
-  width: 26px;
-  height: 26px;
+  width: 32px;
+  height: 32px;
   background: var(--maroon);
   display: flex;
   align-items: center;
@@ -204,8 +213,8 @@
 }
 
 .contactIcon svg {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
 }
 
 .contactDetail {
@@ -216,7 +225,7 @@
 
 .contactLabel {
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: 10px;
   color: var(--ink2);
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -224,17 +233,17 @@
 
 .contactValue {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   color: var(--ink);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-@media (max-width: 768px) {
-  .hero { grid-template-columns: 1fr; }
-  .photoCol { border-right: none; border-bottom: 1px solid var(--rule); padding: 28px 20px; }
-  .content { padding: 24px 20px; }
-  .title { font-size: 28px; }
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .photoCol { border-right: none; border-bottom: 1px solid var(--rule); padding: 36px 24px; }
+  .content { padding: 36px 24px; }
+  .title { font-size: 32px; }
   .contactGrid { grid-template-columns: 1fr; }
 }

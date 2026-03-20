@@ -43,7 +43,15 @@ export default function Timeline({ id, sectionNum, title, entries }) {
             </div>
             <div className={styles.right}>
               <p className={styles.role}>{entry.role}</p>
-              <p className={styles.desc}>{entry.desc}</p>
+              {Array.isArray(entry.desc) ? (
+                <ul className={styles.descList}>
+                  {entry.desc.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p className={styles.desc}>{entry.desc}</p>
+              )}
             </div>
           </div>
         ))}

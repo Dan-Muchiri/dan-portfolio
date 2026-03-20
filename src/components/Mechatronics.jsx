@@ -4,7 +4,18 @@ import styles from './Mechatronics.module.css'
 const disciplines = [
   {
     name: 'Mechanical',
-    skills: ['SolidWorks', 'FEA', 'Fusion 360', 'CAD/CAM', 'Precision Engineering', 'Thermodynamics', 'Manufacturing', 'Trailer & vessel design'],
+    skills: [
+    'Mechanical Design',
+    'CAD/CAM',
+    'Finite Element Analysis (FEA)',
+    'Thermodynamics',
+    'Fluid Mechanics',
+    'Materials Engineering',
+    'Manufacturing Processes',
+    'Mechanical Systems',
+    'Precision Engineering',
+    'Industrial Equipment & Structures'
+  ],
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
         <circle cx="12" cy="12" r="3"/>
@@ -13,8 +24,20 @@ const disciplines = [
     ),
   },
   {
-    name: 'Electrical & Solar',
-    skills: ['Solar PV systems', 'DC/AC cabling', 'Inverter setup', 'Power Electronics', 'Electrical standards', 'Sensors', 'Actuators', 'PLCs'],
+    name: 'Electrical',
+    skills: [
+    'Solar PV Systems',
+    'Electrical Power Systems',
+    'DC/AC Power Distribution',
+    'Power Electronics',
+    'Inverter Systems',
+    'Electrical Protection',
+    'Control Systems',
+    'PLCs',
+    'Sensors & Instrumentation',
+    'Actuators',
+    'Electrical Standards & Safety'
+  ],
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
@@ -23,7 +46,19 @@ const disciplines = [
   },
   {
     name: 'Software & Control',
-    skills: ['Python', 'React', 'Flask', 'JavaScript', 'C', 'Control Engineering', 'MATLAB', 'STM32', 'PCB Design', 'Robust Control'],
+    skills: [
+    'Python',
+    'C Programming',
+    'JavaScript',
+    'React',
+    'Flask',
+    'Embedded Systems',
+    'Microcontrollers',
+    'Control Systems Engineering',
+    'MATLAB',
+    'PCB Design',
+    'System Modeling & Simulation'
+  ],
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <polyline points="16 18 22 12 16 6"/>

@@ -5,34 +5,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 36px;
+  padding: 20px var(--h-pad);
   border-bottom: 1px solid var(--rule);
-  background: rgba(248, 245, 242, 0.92);
-  backdrop-filter: blur(8px);
+  background: rgba(248, 245, 242, 0.94);
+  backdrop-filter: blur(10px);
   transition: box-shadow 0.3s ease;
 }
 
 .nav.scrolled {
-  box-shadow: 0 2px 20px rgba(74, 18, 32, 0.08);
+  box-shadow: 0 2px 24px rgba(74, 18, 32, 0.09);
 }
 
 .logo {
   font-family: var(--mono);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--maroon);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
 }
 
 .links {
   display: flex;
-  gap: 28px;
+  gap: 36px;
   list-style: none;
 }
 
 .links a {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink2);
@@ -44,10 +44,10 @@
 .links a::after {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: -3px;
   left: 0;
   width: 0;
-  height: 1px;
+  height: 1.5px;
   background: var(--maroon);
   transition: width 0.25s ease;
 }
@@ -62,15 +62,15 @@
 
 .tag {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 11px;
   background: var(--maroon);
   color: #f8eced;
-  padding: 5px 12px;
+  padding: 7px 16px;
   letter-spacing: 0.08em;
 }
 
-@media (max-width: 680px) {
-  .nav { padding: 14px 20px; }
+@media (max-width: 768px) {
+  .nav { padding: 16px 24px; }
   .links { display: none; }
-  .tag { font-size: 9px; padding: 4px 8px; }
+  .tag { font-size: 10px; padding: 6px 12px; }
 }

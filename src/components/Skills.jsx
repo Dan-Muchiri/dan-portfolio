@@ -3,20 +3,59 @@ import styles from './Skills.module.css'
 
 const groups = [
   {
-    name: 'Programming',
-    tags: ['Python', 'JavaScript', 'React', 'Flask', 'C'],
+    name: 'Programming & Software',
+    tags: [
+      'Python',
+      'C Programming',
+      'JavaScript',
+      'React',
+      'Flask',
+      'REST APIs',
+      'Collaborative Software Development'
+    ],
   },
   {
-    name: 'Mechanical Design',
-    tags: ['SolidWorks', 'Fusion 360', 'FEA', 'CAD/CAM'],
+    name: 'Mechanical Engineering',
+    tags: [
+      'SolidWorks',
+      'Fusion 360',
+      'Finite Element Analysis (FEA)',
+      'CAD/CAM',
+      'Mechanical Systems',
+      'Precision Engineering',
+      'Manufacturing Processes',
+      'Thermodynamics',
+      'Structural Analysis',
+      'Industrial Equipment & Structures design'
+    ],
   },
   {
-    name: 'Electrical & Solar',
-    tags: ['Solar PV', 'DC/AC Wiring', 'Inverters', 'PLC', 'Power Electronics'],
+    name: 'Electrical & Energy Systems',
+    tags: [
+  'Solar PV Systems',
+  'DC/AC Power Distribution',
+  'Inverter Systems',
+  'Protection Devices (MCB, RCCB, Isolators)',
+  'Programmable Logic Controllers (PLC)',
+  'Power Electronics',
+  'AC/DC Motors & Starters',
+  'Motor Control & Drives',
+  'Electrical Testing & Troubleshooting',
+  'System Integration & Grounding'
+],
   },
   {
     name: 'Control & Simulation',
-    tags: ['MATLAB', 'Control Engineering', 'STM32', 'PCB Design', 'Robust Control'],
+    tags: [
+      'MATLAB',
+      'Control Systems Engineering',
+      'Robust Control',
+      'STM32 Microcontrollers',
+      'Embedded Systems',
+      'PCB Design',
+      'System Modeling & Simulation',
+      'Signal Processing'
+    ],
   },
 ]
 
